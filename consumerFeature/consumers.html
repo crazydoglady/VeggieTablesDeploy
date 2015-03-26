@@ -1,0 +1,44 @@
+<div class="container">
+<div class="jumbotron row consumerIntro col-lg-12 col-md-12 col-sm-12">
+    <h1>Welcome, locavores.</h1>
+    <h3>and everyone who loves them!</h3>
+    <p>Farmstand was made to support the little guys. A place where locally owned producers can network with local restaurants and consumers for locally produced items. </p>
+    <p></p>
+    <div class="col-lg-4 col-md-4 col-sm-6 joinUs">
+       <h1>Join!</h1>
+       <p><a class="btn btn-primary btn-lg" href="#/register" role=" button">Register</a></p>
+  </div>
+    </div>
+<section class="googleMaps row" ng-controller="GoogleMapsController as mapCtrl">
+<!-- <input ng-model="query" type="text" Placeholder="Search"> -->
+<ui-gmap-google-map class="col-lg-12 col-md-12 col-sm-12" center='map.center' zoom='map.zoom'>
+  
+        <ui-gmap-marker class="restMarkers" ng-repeat="member in restaurants track by $index" coords="member.coords"  idkey="member._id">
+        </ui-gmap-marker>
+
+        <ui-gmap-marker class="farmMarkers" ng-repeat="producer in farmers track by $index" coords="producer.coords"  idkey="producer._id">
+        </ui-gmap-marker>
+  
+    </ui-gmap-google-map>
+</section>
+</div>
+<!-- <div class="resources">
+  <h2>Interested in growing your own food?</h2>
+  <ul>
+    <li>
+      <h3>Step 1:
+        <a href="http://planthardiness.ars.usda.gov/PHZMWeb/" target="_blank">Find your Hardiness Zone!</a></h3>
+      <p><h6>(opens in new tab)</h6></p>
+    </li>
+    <li>
+      <h3>Step 2:
+      <a href="">Find plants that will grow where you live.</a>
+      <p><h6></h6></p>
+    </li>
+    <li>
+      <h3>Step 3:
+      <a href="">Find a local garden center or seed provider!</a></h3>
+      <p><h6></h6></p>
+    </li>
+  </ul>
+</div> -->

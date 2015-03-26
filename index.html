@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VeggieTables</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<!-- Latest compiled and minified JavaScript -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body ng-app="farmApp">
+<header class="col-lg-12 col-md-12 col-sm-12">
+	<span><h1>VeggieTables</h1></span>
+	<nav class="col-lg-12 cl-md-12 col-sm-12">
+		<ul class="col-lg-12 cl-md-12 col-sm-12">
+			<li class="col-lg-2 col-md-6 col-sm-12 home"><a href="#/"><h5>  Home</h5></a></li>
+			<li class="col-lg-2 col-md-6 col-sm-12 producer"><a href="#/farmers"><h5>Producers</h5></a></li>
+			<li class="col-lg-2 col-md-6 col-sm-12 restaurant"><a href="#/restaurant"><h5>Restaurants</h5></a></li>
+			<li class="col-lg-2 col-md-6 col-sm-12 consumer"><a href="#/consumer"><h5>Consumers</h5></a></li>
+			<li class="col-lg-1 col-md-6 col-sm-12 contact"><a href="#/contact"><h5> Contact</h5></a></li>
+		</ul>
+	</nav>
+
+</header>
+<div class="container col-sm-12 col-md-12 col-lg-12">
+
+<ng-view class="page {{ pageClass }}"></ng-view>	
+	
+</div><!--end container-->
+<!-- <footer class="col-md-12">
+			<li class="col-md-3">
+				<a href="#/producer"><h3>Producers</h3></a>
+			</li>
+			<li class="col-md-3">	
+				<a href="#/restaurant"><h3>  Restaurants</h3></a>
+			</li>
+			<li class="col-md-3">
+				<a href="#/not-found"><h3> Eat. Learn. Grow.</h3></a>
+			</li>
+			<li class="col-md-3">
+				<a href="#/consumer"><h3>Consumers</h3></a>
+			</li>
+</footer> -->
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+
+
+<script src="app.js"></script>
+<script src="mainCtrl.js"></script>
+<script src="mainService.js"></script>
+<!-- <script src="mapCtrl.js"></script> -->
+<!-- <script src="mapService.js"></script> -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+<script src='bower_components/angular-google-maps/dist/angular-google-maps.js'></script>
+<script src="bower_components/lodash/dist/lodash.js"></script>
+<!-- <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script> -->
+<!-- <script src='bower_components/angular-google-maps/dist/angular-google-maps.js'></script> -->
+<!-- <script src="../farmerFeature/farm.js"></script>
+<script src="../farmerFeature/farmerCtrl.js"></script>
+<script src="../farmerFeature/farmerService.js"></script> -->
+<!-- <script src="../restaurantFeature/restService.js"></script> -->
+<!-- <script src="../restaurantFeature/restaurant.js"></script> -->
+<!-- <script src="../restaurantFeature/restCtrl.js"></script> -->
+
+
+
+
+</body>
+</html>

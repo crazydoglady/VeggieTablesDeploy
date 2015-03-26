@@ -1,0 +1,62 @@
+<div class="container">
+<div class="jumbotron row restIntro">
+  <h1>Welcome, local restaurants!</h1>
+  <h3>and everyone who loves them!</h3>
+  <p>Farmstand was made to support the little guys. A place where locally owned producers can network with local restaurants and consumers for locally produced items. </p>
+  <p></p>
+  	<div class="col-lg-8 col-md-10 col-sm-12 joinUs">
+  <h1>Join!</h1>
+  <p></p>
+  <p><a class="btn btn-primary btn-lg registerRest" href="#/register" role="button">Register!</a></p>
+</div>
+  </div>
+  <section id="restaurants" class="col-lg-6 col-md-6 col-sm-12 row">
+		<h2>Our Network of local Eateries: </h2>
+		 <input id="queryBox" ng-model="query" type="text" name="searchbox" placeholder="FILTER RESULTS">
+		  <div class="viewBox">
+			<article class="listings" ng-repeat="restaurant in restCtrl.restaurants| orderBy: 'name'| filter:query">
+				<img ng-src="{{restaurant.photo}}" class="col-lg-2 col-md-3 col-sm-4">	
+				<h3><a href="#/restaurant/{{restaurant._id}}">{{restaurant.name}}  <i class="fa fa-chevron-right"></i></a></h3>
+				<h4>{{restaurant.city}}</h4>
+				<h4>{{restaurant.state}}</h4>
+			</article>
+		 </div>
+</section>
+<section class="googleMaps row" ng-controller="GoogleMapsController as mapCtrl">
+<!-- <input ng-model="query" type="text" Placeholder="Search"> -->
+<ui-gmap-google-map class="col-lg-6 col-md-6 col-sm-6" center='map.center' zoom='map.zoom'>
+  <article ng-repeat="restaurant in restCtrl.restaurants | filter: query">
+        <ui-gmap-marker coords="restaurant.coords"  idkey="restaurant._id">
+        </ui-gmap-marker>
+        </article>
+    </ui-gmap-google-map>
+</section>
+
+
+</div>
+
+<!-- <div class="container">
+<div class="jumbotron row restIntro">
+  <h1>Welcome, local eateries.</h1>
+  <h3>and everyone who loves them!</h3>
+  <p>Farmstand was made to support the little guys. A place where locally owned producers can network with local restaurants and consumers for locally produced items. </p>
+  <p></p>
+
+<div class="col-lg-4 col-md-4 col-sm-6 joinUs">
+ 
+
+ <section id="restaurants" class="col-lg-8 col-md-8 col-sm-8">
+	<ul class="col-lg-12 col-md-12 col-sm-12">
+		<h2>Our Network of local Eateries: </h2>
+		 <input id="queryBox" ng-model="query" type="text" name="searchbox" placeholder="FILTER RESULTS">
+		<li ng-repeat="member in mainCtrl.members  | filter: 'restaurant' | orderBy: 'name'| filter:query" class="col-lg-8 col-md-8 col-sm-12">
+			<h3><a href="#/restaurant/{{producer._id}}">{{member.name}}  <i class="fa fa-chevron-right"></i></a></h3>
+			<h4>{{member.location}}</h4>
+		</li>
+	</ul>
+	
+</section>
+
+</div>
+<p><button><a class="btn btn-primary btn-lg" href="#/register" role="button">Register</a></button></p>
+</div> -->

@@ -1,0 +1,123 @@
+<div class="jumbotron registerMember">
+  <h1>LOCAL. </h1>
+  <p><h3>If you are interested in joining us, please see the different categories below. <a href="#/contact">Contact us</a> with any questions or problems with your registration. </h3></p>
+  <p><h3>We look forward to working with you!</h3></p>
+  <button><a href="#">Already registered? Login here</a></button>
+</div>
+
+
+<div class="Whowillbenefit">
+<section class="categories col-lg-4 col-md-4 col-sm-4" ng-controller="FarmController as farmCtrl">
+  <p><h2>growers</h2></p>
+  <p><h4>Family Farmers. Backyard or community gardeners. If you have local, fresh produce to sell, we have a network of restaurants and consumers who are eager to meet you! </h4></p>
+  <article class="registerFarmer col-lg-12 col-md-12 col-sm-12">
+  <button type="" ng-show="!new" ng-click="new =!new" class="newReg" class="btn btn-default">Join Now! </button>
+<form ng-show="new" class="col-md-5 newReg" ng-submit="farmCtrl.addProducer(newFarmer)">
+  <h4>Register as a local grower:</h4>
+    <input type="text" ng-model="newFarmer.name" class="col-lg-12" placeholder="Name">
+    <select name="type" id="">
+      <option value="farm">Farm</option>
+      <option value="market">Market</option>
+      <option value="CSA">CSA</option>
+      <option value="other">Other</option>
+    </select>
+    <input type="text" ng-model="newFarmer.address" class=" col-lg-12" placeholder="Street Address">
+    <input type="text" ng-model="newFarmer.city" class=" col-lg-12" placeholder="City">
+    <input type="text" ng-model="newFarmer. state" class=" col-lg-12" placeholder="State">
+    <input type="text" ng-model="newFarmer. zipcode" class=" col-lg-12" placeholder="Zip Code">
+    <input type="text" ng-model="newFarmer.email" class="col-lg-12" placeholder="e-mail">
+  <button type="submit" class="col-lg-md-5 col-md-5 col-sm-5">Register</button>
+</form>
+</article>
+</section>
+
+
+<section class="categories col-lg-4 col-md-4 col-sm-4" ng-controller="RestaurantController as restCtrl">
+  <p><h2>restaurants</h2></p>
+  <p><h4>Sometimes it can be hard to tell who is more passionate about food- the chefs who make it or the distinguished consumer. </p>
+
+  <p>Chefs know that the first step tp making great food is getting the freshest ingredients. Join our network to contact local growers directly and get the inside scoop on what is currently available. </p>
+  <p>Eating local has never been as popular as it is now. Our consumer network are almost as passionate about local food as you are! Registering with our application will allow consumers to see what you're cooking while continuing to support the local economy and environment by eating locally!</h4></p>
+   <article class="registerRestaurant col-lg-12 col-md-12 col-sm-12">
+  <button type="" ng-show="!new" ng-click="new =!new" class="newReg" class="btn btn-default">Join Now! </button>
+<form ng-show="new" class="col-md-5 newReg" ng-submit="restCtrl.addRestaurant(newRestaurant)">
+    <input type="text" ng-model="newRestaurant.name" class="col-lg-12" placeholder="Name">
+    <input type="text" ng-model="newRestaurant.address" class=" col-lg-12" placeholder="Street Address">
+    <input type="text" ng-model="newRestaurant.city" class=" col-lg-12" placeholder="City">
+    <input type="text" ng-model="newRestaurant.state" class=" col-lg-12" placeholder="State">
+    <input type="text" ng-model="newRestaurant.zipcode" class=" col-lg-12" placeholder="Zip Code">
+    <input type="url" ng-model="newRestaurant.website" class=" col-lg-12" placeholder="Website">
+    <input type="text" ng-model="newRestaurant.email" class="col-lg-12" placeholder="e-mail">
+  <button type="submit" class="col-lg-md-5 col-md-5 col-sm-5">Register</button>
+</form>
+</article>
+</section>
+<section class="categories col-lg-4 col-md-4 col-sm-4">
+  <p><h2>consumers</h2></p>
+  <p> <h3>Definition: one who eats foods grown locally whenever possible). </h3></p>
+  <p>Great! We share your passion. We know it's important for the environment, the economy and health to support locally grown produce. By Joining Farmstand, you'll be able to network with local growers for fresh, seasonal produce. Get the inside scoop on what will be available when from your favorite growers and reserve product ahead of time for convenient pickup at your local farmer's market! (We know you shop there anyway...)</p>
+  <p>Oh, and we almost forgot! We also network with restaurants who are passionate about local food as well. Check out our restaurant members.</p>  
+  <article class="registerConsumer col-lg-12 col-md-12 col-sm-12">
+  <button type="" ng-show="!new" ng-click="new =!new" class="newReg" class="btn btn-default">Join Now! </button>
+<form ng-show="new" class="col-md-5 newReg" ng-submit="mainCtrl.addProfile(newMember)">
+  <label for="select"><h4>Please select a membership category:</h4></label>
+   <select name="" id="" ng-model="newMember.category" required>
+      <option value="producer">Producer</option>
+      <option value="restaurant">Restaurant</option>
+      <option value="consumer">Consumer</option>
+    </select>
+    <input type="text" ng-model="newMember.name" class="col-lg-12" placeholder="Name">
+    <input type="text" ng-model="newMember.location" class=" col-lg-12" placeholder="Location">
+    <input type="text" ng-model="newMember.email" class="col-lg-12" placeholder="email">
+  <button type="submit" class="col-lg-md-5 col-md-5 col-sm-5">Register</button>
+</form>
+</article>
+</section>
+</div>
+
+
+<!-- <section class="registerRestaurant col-md-4">
+	<p><h2>Are you a locavore?</h2></p>
+	<p> <h3>Definition: one who eats foods grown locally whenever possible). </h3></p>
+	<p>Great! We share your passion. We know it's important for the environment, the economy and health to support locally grown produce. By Joining Farmstand, you'll be able to network with local growers for fresh, seasonal produce. Get the inside scoop on what will be available when from your favorite growers and reserve product ahead of time for convenient pickup at your local farmer's market! (We know you shop there anyway...)</p>
+	<p>Oh, and we almost forgot! We also network with restaurants who are passionate about local food as well. Check out our restaurant members.</p>	
+	<button type="" class="btn btn-default">Join as a Consumer</button>
+<form class="navbar-form navbar-left signUp col-md-5" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control col-lg-12" placeholder="Name">
+    <input type="text" class="form-control col-lg-12" placeholder="Location">
+    <input type="text" class="form-control col-lg-12" placeholder="Description">
+    <input type="url" class="form-control col-lg-12" placeholder="website">
+    <input type="text" class="form-control col-lg-12" placeholder="email">
+  </div>
+  <button type="submit" class="btn btn-default">Restaurant</button>
+</form>
+</section>
+ 
+
+
+
+
+<section class="registerRestaurant col-md-4">
+	
+	<p><h4>Sometimes it can be hard to tell who is more passionate about food- the chefs who make it or the distinguished consumer. </p>
+
+	<p>Chefs know that the first step tp making great food is getting the freshest ingredients. Join our network to contact local growers directly and get the inside scoop on what is currently available. </p>
+	<p>Eating local has never been as popular as it is now. Our consumer network are almost as passionate about local food as you are! Registering with our application will allow consumers to see what you're cooking while continuing to support the local economy and environment by eating locally!</h4></p>
+	<button type="" class="btn btn-default">Join as a Cuisinier</button>
+<form class="navbar-form navbar-left signUp col-md-5" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control col-lg-12" placeholder="Name">
+    <input type="text" class="form-control col-lg-12" placeholder="Location">
+    <input type="text" class="form-control col-lg-12" placeholder="Description">
+    <input type="url" class="form-control col-lg-12" placeholder="website">
+    <input type="text" class="form-control col-lg-12" placeholder="email">
+  </div>
+  <button type="submit" class="btn btn-default">Restaurant</button>
+</form>
+</section>
+
+
+
+
+ -->

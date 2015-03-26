@@ -1,0 +1,78 @@
+<div class="container">
+<section class="profile row col-lg-6 col-md-6 col-sm-12">
+  <h2>{{farmCtrl.SingleProducer.name}}</h2>
+  <ul class="col-lg-12 col-md-12 col-sm-12">
+  <li><h5>{{farmCtrl.SingleProducer.address}}</h5></li>
+  <li><h5>{{farmCtrl.SingleProducer.city}}, {{farCtrl.SingleProducer.state}} {{farmCtrl.SingleProducer.zipcode}}</h5></li>
+  <li><h5><a href="{{farmCtrl.SingleProducer.website}}">{{farmCtrl.SingleProducer.website}}</a></h5></li> 
+  <li><h5>{{farmCtrl.SingleProducer.description}}</h5></li>
+  </ul>
+  <article class="preferredProd">
+    <p><h3>Current Menu Features:</h3>
+      <h5>New Featured Items coming soon!!!</h5>
+    </p>
+  </article>
+</section>  
+<section class="profile row col-lg-6 col-md-6 col-sm-12"> 
+  <article class="photos">
+    <img ng-src="{{farmCtrl.SingleProducer.photo}}" alt="">
+    <p><h4>{{farmCtrl.SingleProducer.description}}</h4></p>
+  </article>
+  <article class="menuFeat col-lg-12 col-md-12 col-sm-12">
+    <ul>
+      <li>Producers Names Here</li>
+    </ul>
+    
+  </article>
+</section>
+</div>
+
+
+
+<!-- 
+
+<div class="container">
+<h2>{{farmCtrl.SingleProducer.name}}</h2>
+</div>
+<form ng-submit="farmCtrl.editProducer(farmCtrl.SingleProducer)">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="fruits" ng-model="farmCtrl.SingleProducer.product"> Fruits
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="vegetables" ng-model="farmCtrl.SingleProducer.product2"> vegetables
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="herbs" ng-model="farmCtrl.SingleProducer.product3"> Herbs
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="squash" ng-model="farmCtrl.SingleProducer.product4"> squash
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="taters" ng-model="farmCtrl.SingleProducer.product5"> potatoes
+    </label>
+  </div>
+		</div>
+    <label for="">Name</label>
+    <input type="text" ng-model="farmCtrl.SingleProducer.name">
+    <label for="">Location</label>
+    <input type="text" ng-model="farmCtrl.SingleProducer.location">
+    <label for="">Email</label>
+    <input type="text" ng-model="farmCtrl.SingleProducer.email">
+    <label for="">Photo</label>
+    <input type="url" ng-model="farmCtrl.SingleProducer.photo">
+    <label for="">Website</label>
+    <input type="url" ng-model="farmCtrl.SingleProducer.website">
+    <label for="">Description</label>
+    <textarea name="description" id="" cols="30" rows="10" ng-model="farmCtrl.SingleProducer.description"></textarea>
+    <button action="submit">Save Changes</button>
+	</form>
+</div> -->

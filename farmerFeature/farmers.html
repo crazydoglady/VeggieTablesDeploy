@@ -1,0 +1,35 @@
+<div class="container">
+<div class="jumbotron row prodIntro">
+  <h3>local</h3>
+  <p>VeggieTables was made for those who are passionate about nurturing the local economy in a healthy, sustainable manner. It serves as a place where local producers can network with local restaurants and consumers who love them to expand their business, increase demand and reduce wasted food. </p>
+  <section id="growers" class="col-lg-6 col-md-6 col-sm-12 row">
+		<h2>Our Network of local farmers and markets: </h2>
+
+		 <input id="queryBox" ng-model="query" type="text" name="searchbox" placeholder="FILTER RESULTS">
+     <div class="viewBox">
+	     	<article class="listings" ng-repeat="producer in farmCtrl.producers  | orderBy: 'name'| filter:query">
+		      <img ng-src="{{producer.photo}}" class="col-lg-2 col-md-3 col-sm-4">
+		      <h3><a href="#/farmers/{{producer._id}}">{{producer.name}}  <i class="fa fa-chevron-right"></i></a></h3>
+		      <h4>{{producer.city}}</h4>
+          <h4>{{producer.state}}</h4>
+		    </article>
+    </div>
+</section>
+<section class="googleMaps row" ng-controller="GoogleMapsController as mapCtrl">
+<!-- <input ng-model="query" type="text" Placeholder="Search"> -->
+<ui-gmap-google-map class="col-lg-6 col-md-6 col-sm-6" center='map.center' zoom='map.zoom'>
+  <article ng-repeat="producer in farmCtrl.producers | filter: query">
+        <ui-gmap-marker coords="producer.coords"  idkey="producer._id">
+        </ui-gmap-marker>
+        </article>
+    </ui-gmap-google-map>
+
+</section>
+
+<div class="col-lg-8 col-md-10 col-sm-12 joinUs">
+  <h1>Join!</h1>
+  <p></p>
+  <p><a class="btn btn-primary btn-lg" href="#/register" role="button">Register!</a></p>
+</div>
+</div>
+</div>

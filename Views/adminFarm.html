@@ -1,0 +1,76 @@
+<div class="container">
+    <h2>{{farmCtrl.SingleProducer.name}}</h2>
+<form ng-submit="farmCtrl.editProducer(farmCtrl.SingleProducer)">
+  <div class="container">
+  <h2>{{restCtrl.SingleProducer.name}}</h2>
+  <img ng-src="farmCtrl.SingleProducer.photo" alt="">
+  <label for="">Photo Url</label>
+  <input type="url" ng-model="farmCtrl.SingleProducer.photo">
+  <label class="col-lg-8 col-md-10 col-sm-12">Name</label>
+  <input type="text" ng-model="farmCtrl.SingleProducer.name" class="col-lg-8 col-md-10 col-sm-12">
+  <label for="" class="col-lg-8 col-md-10 col-sm-12">Street Address</label>
+    <input type="text" ng-model="farmCtrl.SingleProducer.address" class=" col-lg-8 col-md-10 col-sm-12" >
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">City</label>
+    <input type="text" ng-model="farmCtrl.SingleProducer.city" class=" col-lg-8 col-md-10 col-sm-12" >
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">State</label>
+    <input type="text" ng-model="farmCtrl.SingleProducer.state" class=" col-lg-8 col-md-10 col-sm-12" >
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">Zip code</label>
+    <input type="text" ng-model="farmCtrl.SingleProducer.zipcode" class=" col-lg-8 col-md-10 col-sm-12">
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">Website</label>
+    <input type="url" ng-model="farmCtrl.SingleProducer.website" class=" col-lg-8 col-md-10 col-sm-12">
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">e-mail</label>
+    <input type="text" ng-model="farmCtrl.SingleProducer.email" class="col-lg-8 col-md-10 col-sm-12">
+    <div class="checkbox">
+</div>
+  <div class="checkbox">
+  <h2>Producer: Growing Seasons</h2>
+    <label>
+      <input type="checkbox" value="Spring" ng-model="farmCtrl.SingleProducer.season"> Spring
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="summer" ng-model="farmCtrl.SingleProducer.season2"> Summer
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="fall" ng-model="farmCtrl.SingleProducer.season3"> Fall
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="winter" ng-model="farmCtrl.SingleProducer.season4"> Winter
+    </label>
+  </div>
+<h2>Items Produced</h2>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="fruits" ng-model="farmCtrl.SingleProducer.product"> Fruits
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="vegetables" ng-model="farmCtrl.SingleProducer.product2"> vegetables
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="herbs" ng-model="farmCtrl.SingleProducer.product3"> Herbs
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="squash" ng-model="farmCtrl.SingleProducer.product4"> squash
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="taters" ng-model="farmCtrl.SingleProducer.product5"> potatoes
+    </label>
+  </div>
+  <button action="submit">Save</button>
+</form>
+    </div>
+</div>
+</div>

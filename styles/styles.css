@@ -1,0 +1,300 @@
+/*index page & global styling elements*/
+.ng-enter {
+  animation: scaleUp 2s both ease-in;
+  z-index: 8888; }
+
+.ng-leave {
+  animation: slideOutLeft 2s both ease-in;
+  z-index: 9999; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  height: 100%;
+  background: #54483f;
+  color: #adc240;
+  padding-top: 5em;
+  border-bottom: 3px solid #a62d1b; }
+  header nav ul {
+    float: right;
+    list-style-type: none; }
+    header nav ul li {
+      margin: 0 0 0 4%; }
+      header nav ul li a {
+        text-align: center;
+        font-size: 4em;
+        color: #C0B7A9; }
+        header nav ul li a:hover {
+          color: #dbcc37; }
+
+h1 {
+  font-size: 4em;
+  margin: 0 0 0 2%; }
+
+label {
+  color: #A69F99; }
+
+.jumbotron {
+  height: 100%; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.wrapper {
+  margin: 1% 0 0 6%; }
+
+.joinUs {
+  margin: 1%; }
+
+/*main view*/
+.background {
+  height: 200vh;
+  background: url("../assets/background-barn-wood.jpg");
+  background-size: cover; }
+
+.container {
+  overflow: hidden; }
+
+#chef {
+  position: absolute;
+  margin: 7% 0 0 0;
+  z-index: 1;
+  -ms-transform: rotate(14deg);
+  /* IE 9 */
+  -webkit-transform: rotate(14deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(14deg); }
+  #chef:hover {
+    z-index: 12;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg); }
+
+#carrots {
+  position: absolute;
+  margin: 5% 0 0 60%;
+  width: 33%;
+  z-index: 10;
+  -ms-transform: rotate(7deg);
+  /* IE 9 */
+  -webkit-transform: rotate(7deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(7deg); }
+
+#celery {
+  position: absolute;
+  margin: 10% 0 0 29%;
+  width: 41%;
+  z-index: 5;
+  -ms-transform: rotate(-10deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-10deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-10deg); }
+
+#tractor {
+  position: absolute;
+  margin: 53% 0 0 22%;
+  width: 50%;
+  z-index: 4;
+  -ms-transform: rotate(17deg);
+  /* IE 9 */
+  -webkit-transform: rotate(17deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(17deg); }
+  #tractor:hover {
+    z-index: 12;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg); }
+
+#cabbage {
+  position: absolute;
+  margin: 40% 0 0 0;
+  z-index: 2;
+  -ms-transform: rotate(-7deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-7deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-7deg); }
+
+#swede {
+  position: absolute;
+  margin: 20% 0 0 53%;
+  width: 25%;
+  z-index: 3;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg); }
+  #swede:hover {
+    z-index: 12;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg); }
+
+#sign {
+  position: absolute;
+  margin: 63% 0 0 3%;
+  z-index: 4;
+  -ms-transform: rotate(-17deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-17deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-17deg); }
+  #sign:hover {
+    z-index: 12;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg); }
+
+/*-------------page class styles	*/
+.page {
+  bottom: 0;
+  padding-top: 200px;
+  top: 0;
+  width: 100%; }
+
+.page-main {
+  background: #adc240;
+  color: #2f2526; }
+  .page-main a {
+    color: #49692c; }
+
+.page-restaurants {
+  color: #a62d1b; }
+  .page-restaurants a {
+    color: #49692c; }
+
+.page-farmers {
+  color: #574C4A; }
+  .page-farmers .prodIntro {
+    /*background: linear-gradient(rgba(217, 213, 201, 0.8), rgba(217, 213, 201, 0.8));
+    background-size: cover;*/ }
+    .page-farmers .prodIntro a {
+      color: #49692c; }
+
+/*-----------------admin forms*/
+.adminBox {
+  height: 500px;
+  overflow: scroll; }
+
+.consumerIntro {
+  /*background: linear-gradient(rgba(217, 213, 201, 0.8), rgba(217, 213, 201, 0.8));
+  background-size: cover;*/ }
+
+/*-------------results views*/
+.viewBox {
+  height: 400px;
+  overflow: scroll; }
+
+#queryBox {
+  /*float: right;*/
+  margin: 0 0 2% 0;
+  padding: 0;
+  display: block; }
+
+.listings {
+  height: 100px; }
+  .listings img {
+    height: 5em;
+    width: 100px; }
+
+/*-----------------map stuff*/
+.angular-google-map-container {
+  margin: 11% 2% 0 1%;
+  height: 400px; }
+
+/*--------------contact page*/
+.meetUs {
+  text-align: center; }
+
+#valerie {
+  height: 550px;
+  margin: 1% 0 0 2%;
+  border-radius: 10px;
+  background: url("../assets/valBW.png");
+  background-size: cover;
+  color: black; }
+  #valerie:hover {
+    background: url("../assets/valerie.jpg");
+    background-size: cover; }
+
+#jackie {
+  height: 550px;
+  margin: 1% 0 0 2%;
+  border-radius: 10px;
+  background: url("../assets/jackieBW.png");
+  background-size: cover;
+  color: black; }
+  #jackie:hover {
+    background: url("../assets/jackie.jpg");
+    background-size: cover; }
+
+.feedbackForm {
+  margin: 7% 0 0 2%;
+  border: 4px solid #49692c;
+  border-radius: 10px; }
+  .feedbackForm input {
+    margin: 2%;
+    padding: 1%; }
+
+/* ANIMATIONS
+============================================================================= */
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@keyframes rotateFall {
+  0% {
+    transform: rotateZ(0deg); }
+  20% {
+    transform: rotateZ(10deg);
+    animation-timing-function: ease-out; }
+  40% {
+    transform: rotateZ(17deg); }
+  60% {
+    transform: rotateZ(16deg); }
+  100% {
+    transform: translateY(100%) rotateZ(17deg); } }
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%); } }
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+  to {
+    transform: translateZ(-3000px) rotateZ(360deg);
+    opacity: 0; } }
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+  from {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8); } }
+/* slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(0); } }
+/* slide in from the bottom */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%); }
+  to {
+    transform: translateY(0); } }
+
+/*# sourceMappingURL=Styles.css.map */

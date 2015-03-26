@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>{{restCtrl.SingleRestaurant.name}}</h2>
+<form ng-submit="restCtrl.editProfile(restCtrl.SingleRestaurant)">
+  <img ng-src="restCtrl.SingleRestaurant.photo" alt="">
+  <label for="">Photo Url</label>
+  <input type="url" ng-model="restCtrl.SingleRestaurant.photo">
+  <label class="col-lg-8 col-md-10 col-sm-12">Name</label>
+  <input type="text" ng-model="restCtrl.SingleRestaurant.name" class="col-lg-8 col-md-10 col-sm-12">
+  <label for="" class="col-lg-8 col-md-10 col-sm-12">Street Address</label>
+    <input type="text" ng-model="restCtrl.SingleRestaurant.address" class=" col-lg-8 col-md-10 col-sm-12" >
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">City</label>
+    <input type="text" ng-model="restCtrl.SingleRestaurant.city" class=" col-lg-8 col-md-10 col-sm-12" placeholder="City">
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">State</label>
+    <input type="text" ng-model="restCtrl.SingleRestaurant.state" class=" col-lg-8 col-md-10 col-sm-12" placeholder="State">
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">Zip code</label>
+    <input type="text" ng-model="restCtrl.SingleRestaurant.zipcode" class=" col-lg-8 col-md-10 col-sm-12" placeholder="Zip Code">
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">Website</label>
+    <input type="url" ng-model="restCtrl.SingleRestaurant.website" class=" col-lg-8 col-md-10 col-sm-12" placeholder="Website">
+    <label for="" class="col-lg-8 col-md-10 col-sm-12">e-mail</label>
+    <input type="text" ng-model="restCtrl.SingleRestaurant.email" class="col-lg-8 col-md-10 col-sm-12" placeholder="e-mail">
+    <div class="checkbox">
+  <button type="submit" class="col-lg-3 col-md-4 col-sm-6">Save changes</button>
+	</form>
+</div>

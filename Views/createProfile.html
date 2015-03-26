@@ -1,0 +1,14 @@
+<form ng-show="new" class="col-md-5 newReg" ng-submit="mainCtrl.createProfile(newMember)">
+	<select name="" id="" ng-model="newMember.type"></select>
+	<label for="">Address:</label>
+	<input type="text" ng-model="newMember.address" class=" col-lg-12" placeholder="Street Address">
+	<label for="">City</label>
+    <input type="text" ng-model="newMember.city" class=" col-lg-12" placeholder="City">
+    <label for="">State</label>
+    <input type="text" ng-model="newMember. state" class=" col-lg-12" placeholder="State">
+    <label for="">Zipcode</label>
+    <input type="text" ng-model="newMember. zipcode" class=" col-lg-12" placeholder="Zip Code">
+    <label for="">E-mail:</label>
+    <input type="text" ng-model="newMember.email" class="col-lg-12" placeholder="e-mail">
+  <button type="submit" class="col-lg-md-5 col-md-5 col-sm-5">Create Profile</button>
+</form>
